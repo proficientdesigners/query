@@ -22,7 +22,7 @@ const queryCache = new QueryCache({
   },
 })
 
-const query = queryCache.find(['posts'])
+const query = queryCache.find({ queryKey: ['posts'] })
 ```
 
 Its available methods are:
